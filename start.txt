@@ -1,5 +1,5 @@
 Tes git quick start demo
-adding before rebasing
+adding before a good rebasing
 Thanks to the team
 
 Also modifying start.txt here

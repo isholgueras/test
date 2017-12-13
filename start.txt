@@ -1,4 +1,5 @@
 Tes git quick start demo
-team information
+Thanks to the team
 
 Also modifying start.txt here
+

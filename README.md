@@ -10,3 +10,6 @@ Nacho
 
 ## Contribute
 How to contribute here
+
+## Credits
+Credits to everybody

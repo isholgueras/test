@@ -7,3 +7,6 @@ more text
 Nacho
 
 ## Title 2
+
+## Contribute
+How to contribute here

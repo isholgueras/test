@@ -3,4 +3,8 @@ services:
     image: tugboatqa/httpd
     commands:
       init:
-        - ln -snf "${TUGBOAT_ROOT}" "${DOCROOT}"
+        - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
+    urls:
+      # Create visual diffs of the these URLs using the default options
+      - /
+      - /about.html

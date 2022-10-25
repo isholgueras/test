@@ -8,3 +8,5 @@ services:
       # Create visual diffs of the these URLs using the default options
       - /
       - /about.html
+    visualdiff:
+      threshold: 90

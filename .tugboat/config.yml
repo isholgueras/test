@@ -10,3 +10,14 @@ services:
       - /about.html
     visualdiff:
       threshold: 90
+  apache2:
+    image: tugboatqa/httpd
+    commands:
+      init:
+        - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
+    urls:
+      # Create visual diffs of the these URLs using the default options
+      - /
+      - /about.html
+    visualdiff:
+      threshold: 90

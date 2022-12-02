@@ -1,6 +1,7 @@
 services:
   apache:
     image: tugboatqa/httpd
+    default: true
     commands:
       init:
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
@@ -21,3 +22,5 @@ services:
       - /about.html
     visualdiff:
       threshold: 90
+  mysql:
+    image: tugboatqa/mysql:5.6

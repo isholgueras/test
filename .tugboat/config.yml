@@ -1,6 +1,7 @@
 services:
   apache:
     image: tugboatqa/httpd
+    default: true
     commands:
       init:
         - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
@@ -8,3 +9,18 @@ services:
       # Create visual diffs of the these URLs using the default options
       - /
       - /about.html
+    visualdiff:
+      threshold: 90
+  apache2:
+    image: tugboatqa/httpd
+    checkout: true
+    expose: 80
+    commands:
+      init:
+        - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
+    urls:
+      # Create visual diffs of the these URLs using the default options
+      - /
+      - /about.html
+    visualdiff:
+      threshold: 90
